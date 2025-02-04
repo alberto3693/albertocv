@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mi sitio CV </title>
+    <link rel="stylesheet" href="css/css-gg.css">
+
+    <link rel="shortcut icon" href="resources/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="" href="js/site.js">
+
+    <script src="js/site.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <aside>
+            <div class="profile">
+                <img src="resources\156627.jpg" id="photo-profile" class="my-photo">
+                <div>
+                    <h1 class="title">Alberto Jimenez Rosas</h1>
+                    <div class="badge-profile">Programador</div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100022861159487" target="_blank"><i
+                                class="gg-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="gg-instagram"></i></a>
+                        <a href="https://x.com/?lang=es&mx=2" target="_blank"><i class="gg-twitter"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="gg-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="contacts-block">
+                        <li class="contacts-block-item"><i class="gg-calendar"></i>&nbsp;&nbsp;18 de Enero 2004</li>
+                        <li class="contacts-block-item"><i class="gg-pin"></i>&nbsp;&nbsp;Puebla, Puebla</li>
+                        <li class="contacts-block-item"><i class="gg-mail"></i><a href="#">&nbsp;&nbsp;albertji@gmail.com</a>
+                        </li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;+52 2214610152</li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i><a href="#">&nbsp;&nbsp;Skype:
+                                alberto15</a></li>
+                    </ul>
+                    <a href="media/prueba.pdf" class="btn">Descargar CV</a>
+                </div>
+            </div>
+        </aside>
+
+        <sectiom class="resume">
+
+            <h2 class="title bordered">Portfolio</h2>
+            <div class="portfolio">
+                <img src="resources/porfolio/img1.jpg" onclick="showImage(this)" width="450" height="600">
+                
+                <img src="resources/porfolio/img2.jpg" onclick="showImage(this)" width="450" height="600">
+                
+                <img src="resources/porfolio/img3.jpg" onclick="showImage(this)" width="450" height="600">
+                <img src="resources/porfolio/img5.jpg" onclick="showImage(this)" width="450" height="600">
+                <img src="resources/porfolio/img4.jpg" onclick="showImage(this)" width="500" height="300">
+                <img src="resources/porfolio/img6.jpg" onclick="showImage(this)" width="500" height="300">
+                
+                <div class="modal" id="preview">
+                    <div class="modal-content">
+                        <span class="close-modal" onclick="cerrarModal()"><i class="gg-close"></i></span>
+                        <img id="modal-image" src="" alt="Preview">
+                    </div>
+                </div>
+            </div>
+
+
+            <header>
+                <div class="menu-circle">
+                    <i class="gg-menu-oreos" onclick="toggleMenu()"></i>
+                </div>
+                <div class="inner-menu js-menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html">Portafolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+        </sectiom>
+    </div>
+    <footer>Autor: Alberto Jimenez Rosas</footer>
+    <a class="btn" onclick="SayWelcome()"><i class="font-icon icon-dowload"></i>Hola</a>
+
+
+</body>
+
+</html>
